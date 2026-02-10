@@ -6,6 +6,9 @@ function validateConfig() {
     const warnings = [];
 
     // Check required fields
+    if (!config.pageTitle) {
+        warnings.push("Page title is not set!");
+    }
     if (!config.valentineName) {
         warnings.push("Valentine's name is not set! Using default.");
         config.valentineName = "My Love";
@@ -59,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('pageTitle').textContent = `${config.pageTitle}`;
+    document.title = `${config.pageTitle}`;
     document.getElementById('valentineTitle').textContent = `${config.valentineName}`;
     
     // Set first question texts
