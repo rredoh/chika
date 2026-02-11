@@ -70,9 +70,6 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
     document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
-
-    // Set first questions colors
-    document.getElementById('question1Text').style.color = config.colors.textColor
     
     // Set second question texts
     document.getElementById('question2Text').textContent = config.questions.second.text;
@@ -84,12 +81,25 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('yesBtn3').textContent = config.questions.third.yesBtn;
     document.getElementById('noBtn3').textContent = config.questions.third.noBtn;
 
+    // Setup colors
+    setupColors();
+    
     // Create initial floating elements
     createFloatingElements();
 
     // Setup music player
     setupMusicPlayer();
 });
+
+function setupColors() {
+    document.getElementById('valentineTitle').style.color = config.colors.textColor
+
+    document.getElementById('question1Text').style.color = config.colors.textColor
+    
+    document.getElementById('question2Text').style.color = config.colors.textColor
+
+    document.getElementById('question3Text').style.color = config.colors.textColor
+}
 
 // Create floating hearts and bears
 function createFloatingElements() {
