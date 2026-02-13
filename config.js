@@ -24,15 +24,15 @@ const CONFIG = {
             text: "Do you like spending time together with me?",       // First interaction
             yesBtn: "Yes",                                             // Text for "Yes" button
             noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "Definitely! ❤️"                             // Secret hover message
+            secretAnswer: "Definitely! 💙"                             // Secret hover message
         },
         second: {
             text: "How much do you like it?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+            startText: "Let's say...",                                   // Text before the percentage
+            nextBtn: "Next ->"                                         // Text for the next button
         },
         third: {
-            text: "Would you be my Valentine this year? 🌹",            // The big question!
+            text: "Would you like to be my Valentine? 🌹",            // The big question!
             yesBtn: "Yes!",                                             // Text for "Yes" button
             noBtn: "No"                                                 // Text for "No" button
         }
@@ -41,15 +41,15 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "Okay wow, that escalated 😄💖",  // Shows when they go past 5000%
-        high: "That’s dangerously high 👀💝",              // Shows when they go past 1000%
+        extreme: "Okay wow, that escalated 😄",  // Shows when they go past 5000%
+        high: "That’s dangerously high 👀",              // Shows when they go past 1000%
         normal: "I’ll take it 😊"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
-        title: "This just made my day 💝",
-        message: "Let’s count this as a rain check for something better in person.",
+        title: "That makes me really happy 💝",
+        message: "Let's save the proper version when we're together in person.",
         emojis: "💖✨🤍"  // These will bounce around
     },
 
